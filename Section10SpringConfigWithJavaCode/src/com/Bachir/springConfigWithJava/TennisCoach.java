@@ -1,4 +1,4 @@
-package com.bachir.section7_8Annotations;
+package com.Bachir.springConfigWithJava;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

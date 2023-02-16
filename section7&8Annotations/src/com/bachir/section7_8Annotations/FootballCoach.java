@@ -1,12 +1,15 @@
 package com.bachir.section7_8Annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FootballCoach implements Coach {
 
-
+	//Field Injection
+	@Autowired
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 
 	//Default constructor
@@ -21,11 +24,14 @@ public class FootballCoach implements Coach {
 //		this.fortuneService = theFortuneService;
 //	}
 	
-	@Autowired
-	public void doSomeCrazyStuff(FortuneService theFortuneService) {
-		System.out.println(">>FootballCoach: inside doSomeCrazyStuff() method");
-		this.fortuneService = theFortuneService;
-	}
+	
+	
+//	Method Injection
+//	@Autowired
+//	public void doSomeCrazyStuff(FortuneService theFortuneService) {
+//		System.out.println(">>FootballCoach: inside doSomeCrazyStuff() method");
+//		this.fortuneService = theFortuneService;
+//	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -36,9 +42,7 @@ public class FootballCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return fortuneService.getFortune();
+		return fortuneService.getFortune(); 
 	}
-	
-
 	
 }
