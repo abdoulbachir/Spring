@@ -1,14 +1,16 @@
 package com.bachir.springdemo.mvc;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
-	
+
 	//Need a controller method to show the initial HTML form
 	@RequestMapping("/showForm")
 	public String showForm() {
@@ -21,8 +23,7 @@ public class HelloWorldController {
 		return "helloworld";
 	}
 	
-	// add a new controller to read form data and add data to the model
-	
+	// add a new controller to read form data and add data to the model	
 	@RequestMapping("/processFormVersionTwo")
 	public String letsShoutDude(HttpServletRequest request, Model model) {
 		
@@ -37,6 +38,28 @@ public class HelloWorldController {
 		
 		//create the message
 		String result =  "Yo! "+first_name+" "+last_name;
+		
+		
+		//add message to the model
+		model.addAttribute("message", result);
+		
+		return "helloworld";
+	}
+	
+	//Read data from HTML Form using @RequestParam annotation
+	@RequestMapping("/processFormVersionThree")
+	public String letsShoutAgainDude(
+			@RequestParam("firstName")String first_name,
+			@RequestParam("lastName")String last_name,
+			Model model) {
+		
+		
+		//convert the data to all caps
+		first_name = first_name.toUpperCase();
+		last_name = last_name.toUpperCase();
+		
+		//create the message
+		String result =  "Hey My Friend From Version Three! "+first_name+" "+last_name;
 		
 		
 		//add message to the model

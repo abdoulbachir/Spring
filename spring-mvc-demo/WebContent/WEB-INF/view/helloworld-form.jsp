@@ -7,7 +7,7 @@
 <title>Hello World - InputForm</title>
 </head>
 <body>
-	<form action="processFormVersionTwo" method="GET">
+	<form action="processFormVersionThree" method="GET">
 	  <label for="fname">First name:</label><br>
 	  <input type="text" id="fname" name="firstName" placeholder="Enter First Name"><br>
 	  <label for="lname">Last name:</label><br>
