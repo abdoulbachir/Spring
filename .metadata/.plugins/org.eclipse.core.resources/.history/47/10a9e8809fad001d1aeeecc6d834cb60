@@ -1,0 +1,10 @@
+package com.Bachir.springConfigWithJava;
+
+public class SwimJavaConfigDemoApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
