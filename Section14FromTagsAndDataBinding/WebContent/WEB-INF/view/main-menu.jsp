@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC Demo</title>
+<title>Student Registration Home</title>
 </head>
 <body>
 		<h2>Student Registration - Home Page</h2>
