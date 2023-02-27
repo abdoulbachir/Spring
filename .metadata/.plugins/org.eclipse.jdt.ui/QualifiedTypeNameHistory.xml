@@ -32,9 +32,8 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="com.bachir.section14.binding.Student"/>
-    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
