@@ -27,15 +27,16 @@ public class CustomerController {
 	
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
+		
 		theModel.addAttribute("customer",new Customer());
-		return"customer-form";
+		
+		return"customer-form"; 
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer,
-			BindingResult theBindingResult) {
+	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer,BindingResult theBindingResult) {
 		
-		System.out.println("Last name: |"+theCustomer.getLastName()+"|");
+
 		if (theBindingResult.hasErrors()) {
 			return "customer-form";
 		}else {

@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Thu Feb 23 01:56:55 CST 2023
+#Tue Feb 28 13:43:33 CST 2023
 org.eclipse.jst.jee.server\:Section14FromTagsAndDataBinding=C\:\\Program Files (x86)\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Section14FromTagsAndDataBinding
 org.eclipse.jst.jee.server\:/binary\:D\:\\Udemy\ Courses\\Spring\\Section14FromTagsAndDataBinding\\WebContent\\WEB-INF\\lib\\spring-web-5.3.9.jar=C\:\\Program Files (x86)\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Section14FromTagsAndDataBinding\\WEB-INF\\lib\\spring-web-5.3.9.jar
 org.eclipse.jst.jee.server\:/binary\:D\:\\Spring\\Section14FromTagsAndDataBinding\\WebContent\\WEB-INF\\lib\\spring-web-5.3.9-sources.jar=C\:\\Program Files (x86)\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Section14FromTagsAndDataBinding\\WEB-INF\\lib\\spring-web-5.3.9-sources.jar
